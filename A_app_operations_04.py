@@ -28,6 +28,8 @@ def show_doctors_db():
         for d in doctors:
             print(d)
 
+
+
 def show_patients_db():
     patients = s.query(Patient.first_name, Patient.last_name)
     if patients:
